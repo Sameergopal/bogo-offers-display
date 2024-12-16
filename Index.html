@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="outer-container">
+      <h2 class="heading">YAY! It’s BOGO</h2>
+      <div class="container">
+        
+        <!-- 1 Unit Box -->
+        <div class="box" onclick="toggleBox(1)">
+          <div class="box-header">
+            <div class="left-section">
+              <input type="radio" name="bogo-option" />
+              <p class="unit-label">1 Unit</p>
+              <p class="offer-tag">10% Off</p>
+            </div>
+            <div class="price-section">
+              <p class="price">$10.00 USD</p>
+              <p class="strike">$24.00 USD</p>
+            </div>
+          </div>
+          <p class="standard-price">Standard Price:</p>
+          <div class="box-content" id="content-1">
+            <div class="options">
+              <label for="size-1">Size:</label>
+              <select id="size-1">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <label for="color-1">Colour:</label>
+              <select id="color-1">
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+            <div class="options">
+                <label for="size-1">Size:</label>
+                <select id="size-1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <label for="color-1">Colour:</label>
+                <select id="color-1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Red</option>
+                </select>
+              </div>
+          </div>
+        </div>
+
+        <!-- 2 Units Box -->
+        <div class="box" onclick="toggleBox(2)">
+          <div class="most-popular-tag">MOST POPULAR</div>
+          <div class="box-header">
+            <div class="left-section">
+              <input type="radio" name="bogo-option" />
+              <p class="unit-label">2 Units</p>
+              <p class="offer-tag">20% Off</p>
+            </div>
+            <div class="price-section">
+              <p class="price">$18.00 USD</p>
+              <p class="strike">$24.00 USD</p>
+            </div>
+          </div>
+          <div class="box-content" id="content-2">
+            <div class="options">
+              <label for="size-2">Size:</label>
+              <select id="size-2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <label for="color-2">Colour:</label>
+              <select id="color-2">
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+            <div class="options">
+                <label for="size-1">Size:</label>
+                <select id="size-1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <label for="color-1">Colour:</label>
+                <select id="color-1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Red</option>
+                </select>
+              </div>
+          </div>
+        </div>
+
+        <!-- 3 Units Box -->
+        <div class="box" onclick="toggleBox(3)">
+          <div class="box-header">
+            <div class="left-section">
+              <input type="radio" name="bogo-option" />
+              <p class="unit-label">3 Units</p>
+              <p class="offer-tag">30% Off</p>
+            </div>
+            <div class="price-section">
+              <p class="price">$24.00 USD</p>
+              <p class="strike">$24.00 USD</p>
+            </div>
+          </div>
+          <div class="box-content" id="content-3">
+            <div class="options">
+              <label for="size-3">Size:</label>
+              <select id="size-3">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <label for="color-3">Colour:</label>
+              <select id="color-3">
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+            <div class="options">
+                <label for="size-1">Size:</label>
+                <select id="size-1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <label for="color-1">Colour:</label>
+                <select id="color-1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Red</option>
+                </select>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Total and Add to Cart Section -->
+      <div class="total-section">
+        <p class="free-delivery">Free Delivery</p>
+      </div>
+      <div>
+        <p class="total-usd"><strong>Total: $52.00 USD</strong></p>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+  
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.outer-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff4d6d;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Add Border Color to Boxes */
+.box {
+    border: 2px solid #ddd; /* Default border color */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box.expanded .box-content {
+    display: block;
+}
+
+.box .box-content {
+    display: none;
+    padding: 15px;
+}
+  
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+  
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.unit-label {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.offer-tag {
+    background-color: #ff4d6d;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.price-section {
+    text-align: right;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.strike {
+    font-size: 12px;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.standard-price {
+    font-size: 12px;
+    color: #aaa;
+    padding-left: 15px;
+    margin-top: -5px;
+}
+
+/* Enhance "Most Popular" Tag */
+.most-popular-tag {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background-color: #ff3366; /* Bright pink background */
+    color: white;
+    padding: 6px 12px;
+    font-size: 10px;
+    border-radius: 50px; /* Rounded corners for a more dynamic look */
+    font-weight: bold;
+    text-transform: uppercase; /* Making the text uppercase */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff; /* Adding a white border around the tag */
+}
+
+.box-content {
+    padding: 15px;
+}
+
+.options {
+    margin-bottom: 15px;
+}
+  
+.size-color-section {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    margin: 5px 0;
+    display: inline-block;
+}
+  
+select {
+    margin-left: 10px;
+    padding: 3px;
+    font-size: 14px;
+}
+
+/* Total and Add to Cart Section */
+.total-and-cart {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.free-delivery {
+    font-size: 14px;
+    color: pink;
+}
+
+.total-usd {
+    font-size: 18px;
+    text-align: right;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #ff3366;
+}
+
+/* Expand/Collapse */
+.box.expanded .box-content {
+    display: block;
+}
